@@ -7,9 +7,13 @@ import { createSharedElementStackNavigator } from 'react-navigation-shared-eleme
 import Intro from './screens/Launch/Intro';
 import Launch from './screens/Launch/Launch';
 import Login from './screens/Launch/Login';
-import Menu from './screens/Menu';
-import Customize from './screens/Customize';
+import Hub from './screens/Home/Hub';
+import Notifications from './screens/Notifications';
+import Menu from './screens/Menu/Menu';
+import Customize from './screens/Menu/Customize';
 import Confirm from './screens/Confirm';
+import Cart from './screens/Cart/Cart';
+import Profile from './screens/Profile/Profile';
 import Progress from './screens/Progress';
 import Complete from './screens/Complete';
 import Error from './screens/Error';
@@ -42,12 +46,20 @@ export default function App() {
                       component = {Launch} />
         <Stack.Screen name  = "Login"
                       component = {Login} />
+        <Stack.Screen name  = "Hub"
+                      component = {Hub} />
+        <Stack.Screen name  = "Notifications"
+                      component = {Notifications} />
         <Stack.Screen name = "Menu"
                       component = {Menu}
                       options = {{ title: 'Alive Brew Menu' }}/>
         <Stack.Screen name="Customize"
                       component={Customize}
                       options = {{ title: 'Customize Your Drink' }}/>
+        <Stack.Screen name = "Cart" 
+                      component = {Cart} />
+        <Stack.Screen name = "Profile" 
+                      component = {Profile} />
         <Stack.Screen name = "Confirm" 
                       component = {Confirm} />
         <Stack.Screen name  = "Progress"
