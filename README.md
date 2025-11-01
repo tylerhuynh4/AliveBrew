@@ -1,9 +1,5 @@
 # AliveBrew
 
-from pathlib import Path
-
-readme_content = """# 🧃 Alive Brew – React Native UI Project
-
 ## 📖 Overview  
 
 This repository includes the mobile-based café app prototype of **Alive Brew**, built with **React Native**.  
