@@ -21,7 +21,8 @@ export default function Chatbot({ navigation }) {
                     <Text style = {styles.titleText}>Chatbot</Text>
                 </View>
 
-                <TouchableOpacity style = { styles.notifBtn }>
+                <TouchableOpacity style = { styles.notifBtn }
+                                  onPress = {() => navigation.navigate('Notifications')}>
                     <Ionicons name = "notifications-outline"
                               size = { 40 } 
                               color = { ORANGE } />
