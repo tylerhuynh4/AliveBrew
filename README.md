@@ -42,21 +42,3 @@ The project emphasizes clean UI design, consistent branding, and a smooth naviga
 | Assets | Local `.png` images stored in `/assets` |
 
 ---
-
-## 🗂️ Project Structure
-
-AliveBrew/
-|
-|--- assets/ # All images, icons, and UI graphics
-| |--- Logo
-| |--- etc
-|
-|
-|--- components/ # Shared components (Bottom Navigation)
-|
-|--- screens/ # All main pages
-| |--- Partitioned up into subsections (Home, etc)
-|
-|
-|
-└── App.js (Entry point & navigation setup)
