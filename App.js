@@ -9,14 +9,12 @@ import Launch from './screens/Launch/Launch';
 import Login from './screens/Launch/Login';
 import Hub from './screens/Home/Hub';
 import Notifications from './screens/Notifications';
+import Location from './screens/Location';
+import Chatbot from './screens/Chatbot';
 import Menu from './screens/Menu/Menu';
 import Customize from './screens/Menu/Customize';
-import Confirm from './screens/Confirm';
 import Cart from './screens/Cart/Cart';
 import Profile from './screens/Profile/Profile';
-import Progress from './screens/Progress';
-import Complete from './screens/Complete';
-import Error from './screens/Error';
 
 const Stack = createSharedElementStackNavigator();
 
@@ -50,6 +48,10 @@ export default function App() {
                       component = {Hub} />
         <Stack.Screen name  = "Notifications"
                       component = {Notifications} />
+        <Stack.Screen name = "Location" 
+                      component = {Location} />
+        <Stack.Screen name = "Chatbot" 
+                      component = {Chatbot} />
         <Stack.Screen name = "Menu"
                       component = {Menu}
                       options = {{ title: 'Alive Brew Menu' }}/>
@@ -60,14 +62,6 @@ export default function App() {
                       component = {Cart} />
         <Stack.Screen name = "Profile" 
                       component = {Profile} />
-        <Stack.Screen name = "Confirm" 
-                      component = {Confirm} />
-        <Stack.Screen name  = "Progress"
-                      component = {Progress} />
-        <Stack.Screen name = "Complete"
-                      component = {Complete} />
-        <Stack.Screen name = "Error"
-                      component = {Error} />
       </Stack.Navigator>
     </NavigationContainer>
   );

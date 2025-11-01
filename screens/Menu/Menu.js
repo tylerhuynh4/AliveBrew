@@ -104,7 +104,10 @@ export default function Menu({ navigation }) {
                     </TouchableOpacity>
 
                     <TouchableOpacity style = { styles.addButton }
-                                      onPress = {() => navigation.navigate('Customize', { drink })}>
+                                      onPress = {() => navigation.navigate('Customize', { 
+                                        drinkName: drink.name,
+                                        price: drink.price.toFixed(2),
+                                        image: drink.image, })}>
                         <Text style = {styles.addText}>add</Text>
                     </TouchableOpacity>
                 </View>

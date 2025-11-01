@@ -30,7 +30,7 @@ export default function Hub({ navigation }) {
             </TouchableOpacity>
         </View>
             <TouchableOpacity style = { styles.bell }
-                              onPress={() => navigation.navigate('Notifications') }>
+                              onPress = {() => navigation.navigate('Notifications') }>
                 <Ionicons name = "notifications-outline"
                           size={36} 
                           color="#fff" />
@@ -53,7 +53,7 @@ export default function Hub({ navigation }) {
         <View style = { styles.robotPanel }>
             <Text style = { styles.robotName }>Robot{'\n'}Arm 1</Text>
             <TouchableOpacity style = { styles.changeBtn }
-                              onPress={() => {}}>
+                              onPress = {() => navigation.navigate('Location') }>
                 <Text style = {styles.changeBtnText}>Change Robot</Text>
             </TouchableOpacity>
         </View>
